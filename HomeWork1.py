@@ -95,9 +95,9 @@ vgg16_net2 = VGG16(weights='imagenet', include_top=False, input_shape=(300, 300,
 x3 = vgg16_net2.output
 x3 = GlobalAveragePooling2D()(x3)
 x3 = Dense(512, activation='relu')(x3)
-x3 = Dropout(0.4)(x3)
+x3 = Dropout(0.35)(x3)
 x3 = Dense(128, activation='relu')(x3)
-x3 = Dropout(0.4)(x3)
+x3 = Dropout(0.35)(x3)
 prediction3 = Dense(13, activation='softmax')(x3)
 
 model3 = Model(inputs=vgg16_net2.input, outputs=prediction3)
@@ -115,9 +115,9 @@ vgg19_net2 = VGG19(weights='imagenet', include_top=False, input_shape=(300, 300,
 x4 = vgg19_net2.output
 x4 = GlobalAveragePooling2D()(x4)
 x4 = Dense(512, activation='relu')(x4)
-x4 = Dropout(0.4)(x4)
+x4 = Dropout(0.35)(x4)
 x4 = Dense(128, activation='relu')(x4)
-x4 = Dropout(0.4)(x4)
+x4 = Dropout(0.35)(x4)
 prediction4 = Dense(13, activation='softmax')(x4)
 
 model4 = Model(inputs=vgg19_net2.input, outputs=prediction4)
