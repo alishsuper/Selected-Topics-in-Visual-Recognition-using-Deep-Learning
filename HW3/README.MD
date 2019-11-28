@@ -28,12 +28,14 @@ For training you need to use train dataset: https://github.com/penny4860/svhn-vo
 
 
 Structure:
+```
 train
     - JPEGImages
     - Annotations
 test
     - jpg
     - ann
+```
 
 
 P.S. If you have memory allocation problem, just decrease batch size
