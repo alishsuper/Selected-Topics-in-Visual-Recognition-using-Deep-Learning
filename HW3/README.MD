@@ -24,4 +24,4 @@ Notebook file was created in Google Colab
 6. Run notebook file.
 
 There are two section in notebook file: Testing and Training. For testing you need to prepare one image and you can get speed evaluaion.
-For training you need to use train dataset: https://github.com/penny4860/svhn-voc-annotation-format
+For training you need to use train dataset: https://github.com/penny4860/svhn-voc-annotation-format and testing data which you can get from train dataset (first 10000 images with annotations).
