@@ -17,10 +17,11 @@ https://drive.google.com/open?id=1tf2M4gUE2kdETYrrjFWE0M_8MBpMMSWa
 ### Implementing
 Notebook file was created in Google Colab
 1. Download SVHN dataset.
-2. Download the weights: https://drive.google.com/open?id=1pLwvdiy1hkPGxGHKjmFFHMwPXvr6-D5E.
-3. Run Google Colab and choose in the settings 'GPU'.
-4. Zip dataset and weights and upload them to Google Colab.
-5. Run notebook file.
+2. Download the weights: https://drive.google.com/open?id=1pLwvdiy1hkPGxGHKjmFFHMwPXvr6-D5E and uzip them
+3. Upload retina.zip and unzip it in Google Colab
+4. Run Google Colab and choose in the settings 'GPU'.
+5. Zip dataset and weights and upload them to Google Colab.
+6. Run notebook file.
 
 There are two section in notebook file: Testing and Training. For testing you need to prepare one image and you can get speed evaluaion.
 For training you need to use train dataset: https://github.com/penny4860/svhn-voc-annotation-format
