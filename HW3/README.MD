@@ -27,4 +27,13 @@ There are two section in notebook file: Testing and Training. For testing you ne
 For training you need to use train dataset: https://github.com/penny4860/svhn-voc-annotation-format and testing data which you can get from train dataset (first 10000 images with annotations).
 
 
+Structure:
+train
+    - JPEGImages
+    - Annotations
+test
+    - jpg
+    - ann
+
+
 P.S. If you have memory allocation problem, just decrease batch size
