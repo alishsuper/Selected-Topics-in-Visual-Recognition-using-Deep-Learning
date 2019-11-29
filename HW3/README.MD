@@ -16,15 +16,15 @@ https://drive.google.com/open?id=1tf2M4gUE2kdETYrrjFWE0M_8MBpMMSWa
 
 ### Implementing
 Notebook file was created in Google Colab
-1. Download SVHN dataset.
-2. Download the weights: https://drive.google.com/open?id=1pLwvdiy1hkPGxGHKjmFFHMwPXvr6-D5E and uzip them
+1. Upload SVHN dataset to Google Colab.
+2. Download the weights: https://drive.google.com/open?id=1pLwvdiy1hkPGxGHKjmFFHMwPXvr6-D5E and upload them to Google Colab
 3. Upload retina.zip and unzip it in Google Colab
 4. Run Google Colab and choose in the settings 'GPU'.
 5. Zip dataset and weights and upload them to Google Colab.
 6. Run notebook file.
 
-There are two section in notebook file: Testing and Training. For testing you need to prepare one image and you can get speed evaluaion.
-For training you need to use train dataset: https://github.com/penny4860/svhn-voc-annotation-format and testing data which you can get from train dataset (first 10000 images with annotations).
+There are two section in notebook file: Testing and Training. For testing you need to upload one image to Google Colab and you can get speed evaluaion.
+For training you need to use train dataset: https://github.com/penny4860/svhn-voc-annotation-format and testing data which you can get from train dataset (first 10000 images with annotations. It is optional).
 
 
 Structure:
@@ -38,4 +38,4 @@ test
 ```
 
 
-P.S. If you have memory allocation problem, just decrease batch size
+P.S. If you have memory allocation problem, just decrease batch size. In my case it stopped working when batch size was more than 32
