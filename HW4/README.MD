@@ -1,30 +1,23 @@
-## HW3: Street View House Numbers Detection
+## HW4: Tiny Pascal Dataset Instance segmentation
 
-### [Slides](https://docs.google.com/presentation/d/1T_Idlxsx5N4W1DMVzkFz_dji0JbKl5l472PKKv5LB8w/edit)
+### Slides
+https://docs.google.com/presentation/d/1U1gx48DTkEAJAOE7ycSCcZVlfBdQ0LLEb5X6QF0jKMs/edit#slide=id.g7a5525b70b_0_115
 ### Goals
-Train your convolution neural network to detect the Street View House Numbers
-### Inference benchmark example
-https://colab.research.google.com/drive/1cDCUJWmneNPAVG3VZaOIsv0ntHIogchd
+Train your convolution neural network to segment the common objects in image
 
 ### Google Drive url
-https://drive.google.com/open?id=1tf2M4gUE2kdETYrrjFWE0M_8MBpMMSWa
+https://drive.google.com/drive/u/3/folders/1kwDlhY3Fz346fA2csCDG0vSDMTP10WvX
 
 ### Description
 - Upload your submission json file in the submission folder, I will inference it and update the results on your filename for **every midnight (23:59)!**
-- Try your best to get high performance (both accuracy and speed) before the deadline!
 - Rank top3 on the leaderboard will be invited to make a presentation to share your methodology and get a bonus on your final score!
 
-### Implementing
-Notebook file was created in Google Colab
-1. Download SVHN dataset.
-2. Download the weights: https://drive.google.com/open?id=1pLwvdiy1hkPGxGHKjmFFHMwPXvr6-D5E and uzip them
-3. Upload retina.zip and unzip it in Google Colab
-4. Run Google Colab and choose in the settings 'GPU'.
-5. Zip dataset and weights and upload them to Google Colab.
-6. Run notebook file.
+### Reports submission
+- **Upload YOUR REPORTS to the [google drive](https://drive.google.com/open?id=1tf2M4gUE2kdETYrrjFWE0M_8MBpMMSWa)**
+- Your reports (in PDF format) should include
+  - GitHub/GitLab repository link
+  - Reference if you use any codes from GitHub
+  - Introduction
+  - Methodology (Data pre-process, Model architeture, Hyperparameters,...)
+  - Findings or Summary
 
-There are two section in notebook file: Testing and Training. For testing you need to prepare one image and you can get speed evaluaion.
-For training you need to use train dataset: https://github.com/penny4860/svhn-voc-annotation-format and testing data which you can get from train dataset (first 10000 images with annotations).
-
-
-P.S. If you have memory allocation problem, just decrease batch size
