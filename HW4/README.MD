@@ -14,27 +14,22 @@ https://drive.google.com/drive/u/3/folders/1kwDlhY3Fz346fA2csCDG0vSDMTP10WvX
 
 ### Implementation
 Notebook file was created in Google Colab
-1. Upload Tiny VOC dataset to Google Colab.
+1. Download Tiny Pascal VOC train dataset: https://drive.google.com/open?id=1MQD3pDDBk6X7Xz8Y8OKnDIU-7pyVUhAI and upload it to Google Colab
 2. Download the weights: https://drive.google.com/open?id=1CzR9Cu5A3zqfuhwTuq1Ia9bit-tHRqBC and upload them to Google Colab
 3. Run Google Colab and choose in the settings 'GPU'.
 4. Zip dataset and weights and upload them to Google Colab.
 5. Run notebook file.
-
-ИЗМЕНИТЬ
-
-There are two section in notebook file: Testing and Training. For testing you need to upload one image to Google Colab and you can get speed evaluaion.
-For training you need to use train dataset: https://github.com/penny4860/svhn-voc-annotation-format and testing data which you can get from train dataset (first 10000 images with annotations. It is optional).
-
+6. Follow to the comments in notebook file. It is very IMPORTANT!
 
 Structure:
 ```
-train
+train_images
     - JPEGImages
-    - Annotations
-test
-    - jpg
-    - ann
+test_images
+    - JPEGImages
+pascal_train.json
+test.json
 ```
 
-
-P.S. If you have memory allocation problem, just decrease batch size. In my case it stopped working when batch size was more than 32
+P.S. Try to use this: cfg.merge_from_file("./detectron2_repo/configs/COCO-InstanceSegmentation/mask_rcnn_X_101_32x8d_FPN_3x.yaml").
+It will give higher scores
